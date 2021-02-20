@@ -4,4 +4,11 @@ header.header{
     font-size: 3rem;
   }
 
+  & > input.new-todo{
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px gray solid;
+  }
+
 }

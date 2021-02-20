@@ -1,0 +1,26 @@
+div.view{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  & > input.toggle{
+    margin: auto auto;
+  }
+
+  & > button.destroy{
+    width: 15px;
+    height: 15px;
+    margin: auto auto;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+
+    &:hover{
+      background-color: darken(gray, 10%);
+    }
+
+    & > span.material-icons{
+      font-size: 18px !important;
+
+    }
+  }
+}
