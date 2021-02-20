@@ -4,10 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
+import { TodoListHeaderComponent } from './todo-list-header/todo-list-header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TodoListHeaderComponent
   ],
     imports: [
         BrowserModule,
