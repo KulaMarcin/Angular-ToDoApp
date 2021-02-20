@@ -2,6 +2,10 @@ div.view{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
+  border-top: 1px silver solid;
+  margin-top: 10px;
+  padding-top: 10px;
+
   & > input.toggle{
     margin: auto auto;
   }
@@ -15,7 +19,7 @@ div.view{
     background-color: transparent;
 
     &:hover{
-      background-color: darken(gray, 10%);
+      transform: scale(1.4);
     }
 
     & > span.material-icons{
