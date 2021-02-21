@@ -2,18 +2,18 @@
   "todos": [
     {
       "id": 1,
-      "title": "Read SitePoint article",
+      "title": "Wash the car",
       "complete": false
     },
     {
       "id": 2,
-      "title": "Clean inbox",
+      "title": "Clean up the garage",
       "complete": false
     },
     {
-      "id": 3,
-      "title": "Make restaurant reservation",
-      "complete": false
+      "title": "Buy a birthday present for mom",
+      "complete": false,
+      "id": 3
     }
   ]
 }
