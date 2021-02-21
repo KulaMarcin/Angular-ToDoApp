@@ -1,5 +1,11 @@
+@import "general";
+
 section.todoapp{
   width: 400px;
   margin: 40px auto auto auto;
   text-align: center;
+
+  button.logOutButton{
+    @extend %button;
+  }
 }

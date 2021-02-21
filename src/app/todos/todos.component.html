@@ -6,6 +6,11 @@
                  (remove)="onRemoveTodo($event)"></app-todo-list>
 
   <app-todo-list-footer [todos]="todos"></app-todo-list-footer>
+
+  <button class="logOutButton" (click)="doSignOut()">
+    <span class="buttonTitle">Sign out</span>
+    <span class="material-icons">close</span>
+  </button>
 </section>
 
-<button (click)="doSignOut()">Sign out</button>
+

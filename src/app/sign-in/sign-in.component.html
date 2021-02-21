@@ -1,12 +1,10 @@
 <div class="sign-in-wrapper">
   <form [formGroup]="frm">
 
-    <h1>Todos</h1>
+    <h1>Angular Todos login</h1>
 
-    <!-- Username input -->
-    <input type="text" formControlName="username" placeholder="Your username">
+    <input class="i1" type="text" formControlName="username" placeholder="Your username">
 
-    <!-- Username validation message -->
     <div
       class="input-errors"
       *ngIf="(frm.get('username').invalid && frm.get('username').touched) || showInputErrors"
@@ -16,10 +14,8 @@
       </div>
     </div>
 
-    <!-- Password input -->
-    <input type="password" formControlName="password" placeholder="Your password">
+    <input  class="i2" type="password" formControlName="password" placeholder="Your password">
 
-    <!-- Password validation message -->
     <div
       class="input-errors"
       *ngIf="(frm.get('password').invalid && frm.get('password').touched) || showInputErrors"
@@ -29,19 +25,18 @@
       </div>
     </div>
 
-    <!-- Sign-in error message -->
     <div class="sign-in-error" *ngIf="hasFailed">
       Invalid username and password.
     </div>
 
-    <!-- Sing-in button -->
     <button (click)="doSignIn()" [disabled]="isBusy">
-      <ng-template [ngIf]="!isBusy">Sign in</ng-template>
-      <ng-template [ngIf]="isBusy">Signing in, please wait...</ng-template>
+      <span class="buttonTitle">
+        <ng-template [ngIf]="!isBusy">Sign in</ng-template>
+        <ng-template [ngIf]="isBusy">Signing in, please wait...</ng-template>
+      </span>
+      <span class="material-icons">close</span>
     </button>
 
-    <!-- Tip -->
     <p class="tip">You can sign in with username "demo" and password "demo".</p>
-
   </form>
 </div>
