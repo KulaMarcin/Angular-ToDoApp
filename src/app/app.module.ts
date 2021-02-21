@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { TodoListHeaderComponent } from './todo-list-header/todo-list-header.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoListItemComponent } from './todo-list-item/todo-list-item.component';
@@ -13,6 +13,9 @@ import {ApiService} from "./api.service";
 import {HttpModule} from "@angular/http";
 import { TodosComponent } from './todos/todos.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import {SessionService} from "./session.service";
+import {AuthService} from "./auth.service";
+import { SignInComponent } from './sign-in/sign-in.component';
 
 
 @NgModule({
@@ -23,15 +26,17 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     TodoListItemComponent,
     TodoListFooterComponent,
     TodosComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SignInComponent
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         FormsModule,
         HttpModule,
+        ReactiveFormsModule
     ],
-  providers: [TodoDataService, ApiService],
+  providers: [TodoDataService, ApiService, SessionService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

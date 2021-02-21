@@ -1,0 +1,41 @@
+@import "general";
+
+div.sign-in-wrapper{
+  width: 400px;
+  margin: 0 auto;
+
+  & > form {
+
+    display: flex;
+    flex-direction: column;
+
+    & > h1{
+      text-align: center;
+    }
+
+    & > div.input-errors{
+      margin-top: 10px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    & > div.sign-in-error{
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    & > input {
+      @extend %input;
+
+      &:nth-child(3){
+        margin-top: 30px;
+      }
+    }
+
+    & > button {
+      @extend %button;
+      margin-top: 20px;
+    }
+
+  }
+}
