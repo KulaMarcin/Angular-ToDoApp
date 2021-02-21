@@ -15,9 +15,17 @@ const API_URL = environment.apiUrl;
 @Injectable()
 export class ApiService {
 
-  constructor(
-    private http: Http
-  ) {
+  constructor(private http: Http) {
+  }
+
+  public signIn(username: string, password: string) {
+    return this.http
+      .post(API_URL + '/sign-in', {
+        username,
+        password
+      })
+      .map(response => response.json())
+      .catch(this.handleError);
   }
 
   public getAllTodos(): Observable<Todo[]> {
