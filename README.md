@@ -9,6 +9,21 @@
 
 # Screenshots
 
+## Login: 
+![plot](./scr/angular_todo_1.png)
+
+## Login with validations:
+![plot](./scr/angular_todo_2.png)
+
+## Login with validations #2:
+![plot](./scr/angular_todo_3.png)
+
+## Main tasks page:
+![plot](./scr/angular_todo_4.png)
+
+## New task added:
+![plot](./scr/angular_todo_5.png)
+
 
 # Install and run
 
