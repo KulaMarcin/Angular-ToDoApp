@@ -38,6 +38,6 @@ const routes: Routes = [
   declarations: [],
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
-  providers: [TodosResolver, CanActivateTodosGuard]
+  providers: [CanActivateTodosGuard, TodosResolver]
 })
 export class AppRoutingModule { }
