@@ -14,6 +14,7 @@ import {HttpModule} from "@angular/http";
 import { TodosComponent } from './todos/todos.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {SessionService} from "./session.service";
+import {AuthService} from "./auth.service";
 
 
 @NgModule({
@@ -32,7 +33,7 @@ import {SessionService} from "./session.service";
         FormsModule,
         HttpModule,
     ],
-  providers: [TodoDataService, ApiService, SessionService],
+  providers: [TodoDataService, ApiService, SessionService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
