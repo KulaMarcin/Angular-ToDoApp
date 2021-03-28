@@ -1,4 +1,4 @@
-# Angular ToDoApp - simple 'todo app' created in Angular 2X with:
+# Angular ToDoApp - simple 'todo app' using Angular 2X with:
 
 - angular components
 - angular modules
@@ -23,6 +23,9 @@
 
 ## New task added:
 ![plot](./scr/angular_todo_5.png)
+
+## Task done:
+![plot](./scr/angular_todo_6.png)
 
 
 # Install and run
